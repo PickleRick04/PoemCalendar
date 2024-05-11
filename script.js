@@ -16,7 +16,7 @@ window.onload = function() {
 
     if (password !== "hanchkik") {
         alert("Du hesch di blamiert.");
-        window.location = 'about:blank';
+        window.location = 'https://www.youtube.com/watch?v=YgSPaXgAdzE';
     }
 };
 document.addEventListener("DOMContentLoaded", function() {
