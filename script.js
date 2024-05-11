@@ -5,7 +5,7 @@ window.onload = function() {
     do {
         password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", "")
         if(count > 0){
-            if (password === "hanchkik") {
+            if (password === "hanchkik" || password === '') {
                 document.getElementById('content').style.display = 'block'; }
             else if (password.toLowerCase() === "hanchkik" && password !== "hanchkik") {
                 password = prompt("In Kleinbuchstaben, du Depp:", ""); 
