@@ -4,7 +4,7 @@ window.onload = function() {
     var maxAttempts = 5;
     password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", "");
     do {
-        if (password === "hanchkik" || passwort === " ") {
+        if (password === "hanchkik" || passwort === "q") {
             document.getElementById('content').style.display = 'block';
             break;
         }
@@ -14,7 +14,7 @@ window.onload = function() {
         count++;
     } while (count < maxAttempts);
 
-    if (password !== "hanchkik" && passwort !== " ") {
+    if (password !== "hanchkik" && passwort !== "q") {
         alert("Du hesch di blamiert.");
         window.location = 'https://www.youtube.com/watch?v=YgSPaXgAdzE';
     }
