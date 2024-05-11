@@ -4,20 +4,19 @@ window.onload = function() {
     var maxAttempts = 5;
     password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", "");
     do {
-        
         if (password === "hanchkik") {
             document.getElementById('content').style.display = 'block';
             break; // Beendet die Schleife sofort nach Erfolg
         }
         if(password.toLowerCase === "hanchkik" && passwort !== "hanchkik"){
-            alert("Kleinbuchstaben, du Depp");
+            password = prompt("In Kleinbuchstaben: ", "");
         }
         count++;
     } while (count < maxAttempts);
 
     if (password !== "hanchkik") {
         alert("Du hesch di blamiert.");
-        window.location = 'about:blank';
+        window.location = 'https://www.youtube.com/watch?v=YgSPaXgAdzE';
     }
 };
 document.addEventListener("DOMContentLoaded", function() {
