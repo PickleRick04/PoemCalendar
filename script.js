@@ -16,7 +16,7 @@ window.onload = function() {
         count++;
     } while (password.toLowerCase() !== "hanchkik" && count < 5);
 
-    if (password.toLowerCase() === "hanchkik") {
+    if (password === "hanchkik") {
         document.getElementById('content').style.display = 'block'; 
     } else {
         alert("Du hesch di blamiert.");
