@@ -22,7 +22,7 @@ window.onload = function() {
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('.day a').forEach(function(day) {
         day.onclick = function() {
-            if (this.getAttribute('day') === 'yes') {
+            if (this.getAttribute('data-poem') === 'yes') {
                 const poemText = this.nextElementSibling;
                 alert('Load and display poem for ' + poemText.textContent.trim());
             } else {
