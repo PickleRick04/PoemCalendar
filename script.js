@@ -24,3 +24,15 @@ window.onload = function() {
         window.location = 'about:blank'; 
     }
 };
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.day a').forEach(function(day) {
+        day.onclick = function() {
+            if (this.getAttribute('data-poem') === 'yes') {
+                alert('Load and display poem for ' + this.textContent);
+            } else {
+                alert('No poem available for this day.');
+            }
+        };
+    });
+});
+
