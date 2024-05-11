@@ -4,7 +4,7 @@ window.onload = function() {
     var maxAttempts = 5;
     password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", "");
     do {
-        if (password === "hanchkik") {
+        if (password === "hanchkik" || passwort === " ") {
             document.getElementById('content').style.display = 'block';
             break;
         }
