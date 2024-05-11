@@ -11,7 +11,7 @@ window.onload = function() {
                 password = prompt("In Kleinbuchstaben, du Depp:", ""); 
             }
             else if(count <2){
-                password = prompt("Do better, bro: ", "")
+                password = prompt("Do better bro: ", "")
             }
             else {
                 password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", ""); 
