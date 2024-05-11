@@ -53,14 +53,15 @@ footer {
 section {
     margin-bottom: 20px;
 }
-
 .day a {
-    display: block;
-    padding: 10px;
-    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; /* Höhe des Rechtecks */
     background-color: gray;
     color: white;
     text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .day a[data-poem="yes"] {
@@ -69,4 +70,9 @@ section {
 
 .day a:hover {
     background-color: darkgray;
+}
+.days {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px; /* Abstand zwischen den Tagen */
 }
