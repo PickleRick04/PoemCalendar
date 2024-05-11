@@ -4,11 +4,11 @@ window.onload = function() {
     var maxAttempts = 3;
     password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", "");
     do {
-        if (password === "hanchkik" || passwort === "q") {
+        if (password === "hanchkik" || password === "q") {
             document.getElementById('content').style.display = 'block';
             break;
         }
-        if(password.toLowerCase === "hanchkik" && passwort !== "hanchkik"){
+        if(password.toLowerCase === "hanchkik" && password !== "hanchkik"){
             password = prompt("In Kleinbuchstaben: ", "");
         }
         count++;
