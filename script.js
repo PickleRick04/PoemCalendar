@@ -14,7 +14,7 @@ window.onload = function() {
         }
 
         count++;
-    } while (password.toLowerCase() !== "hanchkik" && count < 5);
+    } while (password !== "hanchkik" && count < 5);
 
     if (password === "hanchkik") {
         document.getElementById('content').style.display = 'block'; 
