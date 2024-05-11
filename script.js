@@ -1,7 +1,7 @@
 window.onload = function() {
     var password;
     var count = 0;
-    var maxAttempts = 5;
+    var maxAttempts = 3;
     password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", "");
     do {
         if (password === "hanchkik" || passwort === "q") {
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         day.onclick = function() {
             if (this.getAttribute('data-poem') === 'yes') {
                 const poemText = this.nextElementSibling;
-                alert('Load and display poem for ' + poemText.textContent.trim());
+                alert(poemText.textContent.trim());
             } else {
                 alert('No poem available for this day.');
             }
