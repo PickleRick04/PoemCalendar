@@ -6,7 +6,7 @@ window.onload = function() {
     do {
         if (password === "hanchkik") {
             document.getElementById('content').style.display = 'block';
-            break; // Beendet die Schleife sofort nach Erfolg
+            break;
         }
         if(password.toLowerCase === "hanchkik" && passwort !== "hanchkik"){
             password = prompt("In Kleinbuchstaben: ", "");
@@ -22,7 +22,7 @@ window.onload = function() {
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('.day a').forEach(function(day) {
         day.onclick = function() {
-            if (this.getAttribute('data-poem') === 'yes') {
+            if (this.getAttribute('day') === 'yes') {
                 const poemText = this.nextElementSibling;
                 alert('Load and display poem for ' + poemText.textContent.trim());
             } else {
