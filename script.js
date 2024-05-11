@@ -4,14 +4,17 @@ window.onload = function() {
 
     do {
         password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", "")
-        if (password === "hanchkik" || password === ' ') {
-            document.getElementById('content').style.display = 'block'; }
+        if (password === "hanchkik") {
+            document.getElementById('content').style.display = 'block'; 
+        }
         if(count > 0){
-            if (password.toLowerCase() === "hanchkik" && password !== "hanchkik") {
+            if (password === "hanchkik") {
+                document.getElementById('content').style.display = 'block'; }
+            else if (password.toLowerCase() === "hanchkik" && password !== "hanchkik") {
                 password = prompt("In Kleinbuchstaben, du Depp:", ""); 
             }
             else if(count <2){
-                password = prompt("Do better bro: ", "")
+                password = prompt("Do better, bro: ", "")
             }
             else {
                 password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", ""); 
@@ -19,18 +22,22 @@ window.onload = function() {
         }
         count++;
     } while (password !== "hanchkik" && count < 5);
+
+    if (password === "hanchkik") {
+        document.getElementById('content').style.display = 'block'; 
+    } else {
         alert("Du hesch di blamiert.");
-        window.location = 'about:blank';
-    
+        window.location = 'about:blank'; 
+    }
 };
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('.day a').forEach(function(day) {
         day.onclick = function() {
             if (this.getAttribute('data-poem') === 'yes') {
                 const poemText = this.nextElementSibling;
-                alert(poemText.textContent.trim());
+                alert('Load and display poem for ' + poemText.textContent.trim());
             } else {
-                alert('');
+                alert('No poem available for this day.');
             }
         };
     });
