@@ -1,17 +1,22 @@
 window.onload = function() {
-    var password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben:", "");
-    if(password.toLowerCase === "hanchkik" && password != "hanchkik"){
-        window.onload = function() {
-            var password = prompt("In Kleinbuchstaben du Depp:", "");
-            if (password === "hanchkik") {
-            document.getElementById('content').style.display = 'block';
-            }
+    var password;
+    var count = 0;
+
+    do {
+        if (count > 0 && password.toLowerCase() === "hanchkik" && password !== "hanchkik") {
+            password = prompt("In Kleinbuchstaben, du Depp:", ""); // If incorrect case used
+        } else {
+            password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben:", ""); // First or correct case prompt
         }
-    }
-    if (password === "hanchkik") {
-        document.getElementById('content').style.display = 'block';
+
+        count++;
+    } while (password.toLowerCase() !== "hanchkik" && count < 5);
+
+    if (password.toLowerCase() === "hanchkik") {
+        alert("Souverään!");
+        document.getElementById('content').style.display = 'block'; // Show content if correct
     } else {
-        alert("Incorrect password. You cannot access the content.");
-        window.location = 'about:blank'; // Optionally redirect them to another page or just blank it out
+        alert("Du hesch di blamiert.");
+        window.location = 'about:blank'; // Redirect if failed after 5 attempts
     }
 };
