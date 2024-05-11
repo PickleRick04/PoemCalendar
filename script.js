@@ -3,11 +3,12 @@ window.onload = function() {
     var count = 0;
 
     do {
+        password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben:", "")
         if (password.toLowerCase() === "hanchkik" && password !== "hanchkik") {
             password = prompt("In Kleinbuchstaben, du Depp:", ""); 
         }
         else if(count <2){
-            password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben:", "")
+            password = prompt("Do better, bro: ", "")
         }
         else {
             password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben:", ""); 
