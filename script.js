@@ -14,7 +14,7 @@ window.onload = function() {
         count++;
     } while (count < maxAttempts);
 
-    if (password !== "hanchkik" && passwort !== "q") {
+    if (password !== "hanchkik" && password !== "q") {
         alert("Du hesch di blamiert.");
         window.location = 'https://www.youtube.com/watch?v=YgSPaXgAdzE';
     }
