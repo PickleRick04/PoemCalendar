@@ -1,33 +1,23 @@
 window.onload = function() {
     var password;
     var count = 0;
+    var maxAttempts = 5;
 
     do {
-        password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", "")
+        password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", "");
         if (password === "hanchkik") {
-            document.getElementById('content').style.display = 'block'; 
+            document.getElementById('content').style.display = 'block';
+            break; // Beendet die Schleife sofort nach Erfolg
         }
-        if(count > 0){
-            if (password === "hanchkik") {
-                document.getElementById('content').style.display = 'block'; }
-            else if (password.toLowerCase() === "hanchkik" && password !== "hanchkik") {
-                password = prompt("In Kleinbuchstaben, du Depp:", ""); 
-            }
-            else if(count <2){
-                password = prompt("Do better, bro: ", "")
-            }
-            else {
-                password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", ""); 
-            }
+        if(password.toLowerCase === "hanchkik" && passwort !== "hanchkik"){
+            alert("Kleinbuchstaben, du Depp");
         }
         count++;
-    } while (password !== "hanchkik" && count < 5);
+    } while (count < maxAttempts);
 
-    if (password === "hanchkik") {
-        document.getElementById('content').style.display = 'block'; 
-    } else {
+    if (password !== "hanchkik") {
         alert("Du hesch di blamiert.");
-        window.location = 'about:blank'; 
+        window.location = 'about:blank';
     }
 };
 document.addEventListener("DOMContentLoaded", function() {
