@@ -8,7 +8,7 @@ window.onload = function() {
             document.getElementById('content').style.display = 'block';
             break;
         }
-        if(password.toLowerCase === "hanchkik" && password !== "hanchkik"){
+        if(password.toLowerCase() === "hanchkik" && password !== "hanchkik"){
             password = prompt("In Kleinbuchstaben: ", "");
         }
         count++;
