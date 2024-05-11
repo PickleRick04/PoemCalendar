@@ -25,39 +25,14 @@ window.onload = function() {
     }
 };
 document.addEventListener("DOMContentLoaded", function() {
-    const modal = document.createElement('div');
-    modal.className = 'modal';
-    const modalContent = document.createElement('div');
-    modalContent.className = 'modal-content';
-    const closeSpan = document.createElement('span');
-    closeSpan.className = 'close';
-    closeSpan.innerHTML = '&times;';
-    closeSpan.onclick = function() { 
-        modal.style.display = "none"; 
-    };
-    modalContent.appendChild(closeSpan);
-    const content = document.createElement('p');
-    modalContent.appendChild(content);
-    modal.appendChild(modalContent);
-    document.body.appendChild(modal);
-
     document.querySelectorAll('.day a').forEach(function(day) {
         day.onclick = function() {
             if (this.getAttribute('data-poem') === 'yes') {
-                content.textContent = 'Loading poem content for ' + this.textContent; // Replace this with actual poem content fetching logic.
-                modal.style.display = "block";
+                const poemText = this.nextElementSibling;
+                alert('Load and display poem for ' + poemText.textContent.trim());
             } else {
                 alert('No poem available for this day.');
             }
         };
     });
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    };
 });
-
-
