@@ -3,27 +3,25 @@ window.onload = function() {
     var count = 0;
 
     do {
-        password = prompt("Wie nenne ich Frau Deiss in Kleinbuchs{taben:", "")
+        password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", "")
         if(count > 0){
-            if (password.toLowerCase() === "hanchkik" && password !== "hanchkik") {
+            if (password === "hanchkik") {
+                document.getElementById('content').style.display = 'block'; }
+            else if (password.toLowerCase() === "hanchkik" && password !== "hanchkik") {
                 password = prompt("In Kleinbuchstaben, du Depp:", ""); 
             }
             else if(count <2){
                 password = prompt("Do better, bro: ", "")
             }
             else {
-                password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben:", ""); 
+                password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", ""); 
             }
         }
         count++;
     } while (password !== "hanchkik" && count < 5);
-
-    if (password === "hanchkik") {
-        document.getElementById('content').style.display = 'block'; 
-    } else {
         alert("Du hesch di blamiert.");
-        window.location = 'about:blank'; 
-    }
+        window.location = 'about:blank';
+    
 };
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('.day a').forEach(function(day) {
