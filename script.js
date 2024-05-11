@@ -3,17 +3,18 @@ window.onload = function() {
     var count = 0;
 
     do {
-        password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben:", "")
-        if (password.toLowerCase() === "hanchkik" && password !== "hanchkik") {
-            password = prompt("In Kleinbuchstaben, du Depp:", ""); 
+        password = prompt("Wie nenne ich Frau Deiss in Kleinbuchs{taben:", "")
+        if(count > 0){
+            if (password.toLowerCase() === "hanchkik" && password !== "hanchkik") {
+                password = prompt("In Kleinbuchstaben, du Depp:", ""); 
+            }
+            else if(count <2){
+                password = prompt("Do better, bro: ", "")
+            }
+            else {
+                password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben:", ""); 
+            }
         }
-        else if(count <2){
-            password = prompt("Do better, bro: ", "")
-        }
-        else {
-            password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben:", ""); 
-        }
-
         count++;
     } while (password !== "hanchkik" && count < 5);
 
