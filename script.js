@@ -4,23 +4,22 @@ window.onload = function() {
 
     do {
         if (count > 0 && password.toLowerCase() === "hanchkik" && password !== "hanchkik") {
-            password = prompt("In Kleinbuchstaben, du Depp:", ""); // If incorrect case used
+            password = prompt("In Kleinbuchstaben, du Depp:", ""); 
         }
         else if(count <2){
             password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben:", "")
         }
         else {
-            password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben:", ""); // First or correct case prompt
+            password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben:", ""); 
         }
 
         count++;
     } while (password.toLowerCase() !== "hanchkik" && count < 5);
 
     if (password.toLowerCase() === "hanchkik") {
-        alert("Souverään!");
-        document.getElementById('content').style.display = 'block'; // Show content if correct
+        document.getElementById('content').style.display = 'block'; 
     } else {
         alert("Du hesch di blamiert.");
-        window.location = 'about:blank'; // Redirect if failed after 5 attempts
+        window.location = 'about:blank'; 
     }
 };
