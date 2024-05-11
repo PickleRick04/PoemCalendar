@@ -5,7 +5,11 @@ window.onload = function() {
     do {
         if (count > 0 && password.toLowerCase() === "hanchkik" && password !== "hanchkik") {
             password = prompt("In Kleinbuchstaben, du Depp:", ""); // If incorrect case used
-        } else {
+        }
+        else if(count <2){
+            password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben:", "")
+        }
+        else {
             password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben:", ""); // First or correct case prompt
         }
 
