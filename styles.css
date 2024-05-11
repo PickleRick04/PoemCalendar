@@ -70,3 +70,17 @@ section {
 .day a:hover {
     background-color: darkgray;
 }
+.days-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.day {
+    margin: 5px;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    flex: 1 0 20%; /* Ermöglicht, dass drei Elemente gleichmäßig verteilt sind */
+}
