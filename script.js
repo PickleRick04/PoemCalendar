@@ -3,7 +3,7 @@ window.onload = function() {
     var count = 0;
 
     do {
-        if (count > 0 && password.toLowerCase() === "hanchkik" && password !== "hanchkik") {
+        if (password.toLowerCase() === "hanchkik" && password !== "hanchkik") {
             password = prompt("In Kleinbuchstaben, du Depp:", ""); 
         }
         else if(count <2){
