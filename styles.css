@@ -25,6 +25,10 @@ header nav ul {
     padding: 0;
 }
 
+.poem-text{
+    text-align: center;
+}
+
 header nav ul li {
     display: inline;
     margin-right: 10px;
