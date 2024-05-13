@@ -1,8 +1,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    margin: 50 0 0 0;
-    padding: 0;
+    margin: 500 0 0 0;
+    padding: 500 0 0 0;
     background: #f4f4f4;
     color: #333;
     padding-top: 70px; /* Increased padding to account for header height */
