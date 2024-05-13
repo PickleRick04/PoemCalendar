@@ -2,11 +2,11 @@ window.onload = function() {
     var password;
     var count = 0;
     var maxAttempts = 5;
-    password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", "");
     do {
+        password = prompt("Wie nenne ich Frau Deiss in Kleinbuchstaben: ", "");
         if (password === "hanchkik") {
             document.getElementById('content').style.display = 'block';
-            break; // Beendet die Schleife sofort nach Erfolg
+            break;
         }
         if(password.toLowerCase === "hanchkik" && passwort !== "hanchkik"){
             password = prompt("In Kleinbuchstaben: ", "");
