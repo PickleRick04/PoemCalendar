@@ -25,8 +25,10 @@ header nav ul {
     padding: 0;
 }
 
-.poem-text{
-    text-align: center;
+.poem-text {
+    text-align: center; /* Ensures text is centered */
+    width: 100%; /* Ensures the div takes full width */
+    display: block; /* Ensures the div behaves as a block element */
 }
 
 header nav ul li {
@@ -60,6 +62,7 @@ section {
 .day a {
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
     height: 50px; /* Height of the rectangle */
     background-color: gray;
